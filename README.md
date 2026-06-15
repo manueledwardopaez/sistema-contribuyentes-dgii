@@ -30,6 +30,13 @@ El sistema cuenta con las siguientes características principales:
 2. **Listado de Comprobantes Fiscales:** Visualización general de los comprobantes fiscales generados/recibidos.
 3. **Detalles de Contribuyente:** Búsqueda y visualización de la información detallada de un contribuyente en específico utilizando su RNC o Cédula.
 4. **Diseño Responsivo:** Interfaz adaptable a diferentes tamaños de pantalla.
+---
+
+## 📸 Vista Previa
+
+![Directorio de Contribuyentes](frontend/public/demo.png)
+
+![Detalles y referencias](frontend/public/demo-2.png)
 
 ---
 
