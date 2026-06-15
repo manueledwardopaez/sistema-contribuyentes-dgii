@@ -78,7 +78,7 @@ const TaxpayerDetail: React.FC = () => {
                   <td style={{ textAlign: 'right' }}>
                     ${receipt.monto.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                   </td>
-                  <td style={{ textAlign: 'right', color: '#60a5fa' }}>
+                  <td style={{ textAlign: 'right', color: 'var(--primary-color)', fontWeight: 'bold' }}>
                     ${receipt.itbis18.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                   </td>
                 </tr>

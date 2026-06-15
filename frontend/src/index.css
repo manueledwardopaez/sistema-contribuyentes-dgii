@@ -1,12 +1,12 @@
 :root {
-  --primary-color: #2563eb;
-  --primary-hover: #1d4ed8;
-  --bg-gradient-start: #0f172a;
-  --bg-gradient-end: #1e293b;
-  --surface-color: rgba(30, 41, 59, 0.7);
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --border-color: rgba(255, 255, 255, 0.1);
+  --primary-color: #388e3c; /* DGII Green */
+  --primary-hover: #2e7d32;
+  --bg-gradient-start: #f3f4f6;
+  --bg-gradient-end: #e5e7eb;
+  --surface-color: #ffffff;
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --border-color: #e5e7eb;
   --success-color: #10b981;
   --warning-color: #f59e0b;
 }
@@ -18,7 +18,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  background: var(--bg-gradient-start);
   color: var(--text-primary);
   min-height: 100vh;
 }
@@ -29,12 +29,10 @@ body {
 
 .glass-panel {
   background: var(--surface-color);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 24px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .app-container {
@@ -51,16 +49,14 @@ body {
 .header h1 {
   font-size: 2.5rem;
   font-weight: 800;
-  background: -webkit-linear-gradient(#60a5fa, #a78bfa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 
 .table-container {
   overflow-x: auto;
-  border-radius: 12px;
-  background: rgba(15, 23, 42, 0.5);
+  border-radius: 8px;
+  background: #ffffff;
 }
 
 table {
@@ -88,8 +84,9 @@ tbody tr {
 }
 
 tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  transform: translateY(-2px);
+  background-color: #f9fafb;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
 }
 
 .status-badge {
@@ -101,33 +98,36 @@ tbody tr:hover {
 }
 
 .status-activo {
-  background: rgba(16, 185, 129, 0.2);
+  background: #ecfdf5;
   color: var(--success-color);
+  border: 1px solid #a7f3d0;
 }
 
 .status-inactivo {
-  background: rgba(245, 158, 11, 0.2);
+  background: #fffbeb;
   color: var(--warning-color);
+  border: 1px solid #fde68a;
 }
 
 .btn-back {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: transparent;
-  color: var(--text-secondary);
+  background: #ffffff;
+  color: var(--text-primary);
   border: 1px solid var(--border-color);
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s;
   font-size: 1rem;
   margin-bottom: 24px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 
 .btn-back:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--text-primary);
+  background: #f3f4f6;
+  border-color: #d1d5db;
 }
 
 .summary-card {
@@ -135,10 +135,12 @@ tbody tr:hover {
   justify-content: space-between;
   align-items: center;
   padding: 24px;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(30, 41, 59, 0.8));
+  background: #ffffff;
   border-radius: 12px;
-  border: 1px solid rgba(37, 99, 235, 0.3);
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--primary-color);
   margin-top: 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .summary-card h3 {
@@ -150,7 +152,7 @@ tbody tr:hover {
 .summary-amount {
   font-size: 2rem;
   font-weight: 800;
-  color: #60a5fa;
+  color: var(--primary-color);
 }
 
 .loading, .error {
