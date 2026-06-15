@@ -20,10 +20,10 @@ namespace Dgii.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TaxpayerDto>>> GetAllTaxpayers()
+        public async Task<ActionResult<PagedResult<TaxpayerDto>>> GetPagedTaxpayers([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
         {
-            var taxpayers = await _taxpayerService.GetAllTaxpayersAsync();
-            return Ok(taxpayers);
+            var pagedResult = await _taxpayerService.GetPagedTaxpayersAsync(pageNumber, pageSize);
+            return Ok(pagedResult);
         }
 
         [HttpGet("receipts")]

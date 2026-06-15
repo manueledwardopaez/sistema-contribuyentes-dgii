@@ -17,3 +17,4 @@
 /home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Infrastructure/obj/Debug/net8.0/Dgii.Infrastructure.pdb
 /home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Infrastructure/obj/Debug/net8.0/Dgii.Infrastructure.genruntimeconfig.cache
 /home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Infrastructure/obj/Debug/net8.0/ref/Dgii.Infrastructure.dll
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Infrastructure/obj/Debug/net8.0/Dgii.Infrastructure.sourcelink.json

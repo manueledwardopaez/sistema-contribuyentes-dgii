@@ -106,3 +106,4 @@
 /home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Tests/obj/Debug/net8.0/Dgii.Tests.pdb
 /home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Tests/obj/Debug/net8.0/Dgii.Tests.genruntimeconfig.cache
 /home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Tests/obj/Debug/net8.0/ref/Dgii.Tests.dll
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Tests/obj/Debug/net8.0/Dgii.Tests.sourcelink.json

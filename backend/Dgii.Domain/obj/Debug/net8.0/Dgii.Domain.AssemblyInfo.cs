@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dgii.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af63bee866f6897f0b31f70244977eaa9fe91453")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4f8c2769a047621c878142c675552c80ec39692")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dgii.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dgii.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

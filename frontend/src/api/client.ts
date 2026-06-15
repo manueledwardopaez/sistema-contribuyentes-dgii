@@ -1,5 +1,5 @@
 import axios from 'axios';
-import type { Taxpayer, TaxpayerDetails, TaxReceipt } from '../types';
+import type { Taxpayer, TaxpayerDetails, TaxReceipt, PagedResult } from '../types';
 
 const API_BASE_URL = 'http://localhost:5000/api';
 
@@ -10,8 +10,8 @@ const apiClient = axios.create({
   },
 });
 
-export const getTaxpayers = async (): Promise<Taxpayer[]> => {
-  const response = await apiClient.get<Taxpayer[]>('/taxpayers');
+export const getTaxpayers = async (pageNumber: number = 1, pageSize: number = 10): Promise<PagedResult<Taxpayer>> => {
+  const response = await apiClient.get<PagedResult<Taxpayer>>(`/taxpayers?pageNumber=${pageNumber}&pageSize=${pageSize}`);
   return response.data;
 };
 

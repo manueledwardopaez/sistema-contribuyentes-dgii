@@ -9,3 +9,4 @@
 /home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/Debug/net8.0/refint/Dgii.Domain.dll
 /home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/Debug/net8.0/Dgii.Domain.pdb
 /home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/Debug/net8.0/ref/Dgii.Domain.dll
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/Debug/net8.0/Dgii.Domain.sourcelink.json

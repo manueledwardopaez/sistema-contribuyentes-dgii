@@ -150,3 +150,4 @@
 /home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Api/obj/Debug/net8.0/Dgii.Api.pdb
 /home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Api/obj/Debug/net8.0/Dgii.Api.genruntimeconfig.cache
 /home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Api/obj/Debug/net8.0/ref/Dgii.Api.dll
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Api/obj/Debug/net8.0/Dgii.Api.sourcelink.json

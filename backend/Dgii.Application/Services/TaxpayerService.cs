@@ -30,6 +30,27 @@ namespace Dgii.Application.Services
             });
         }
 
+        public async Task<PagedResult<TaxpayerDto>> GetPagedTaxpayersAsync(int pageNumber, int pageSize)
+        {
+            var (items, totalCount) = await _taxpayerRepository.GetPagedAsync(pageNumber, pageSize);
+            
+            var dtos = items.Select(t => new TaxpayerDto
+            {
+                RncCedula = t.RncCedula,
+                Nombre = t.Nombre,
+                Tipo = t.Tipo,
+                Estatus = t.Estatus
+            });
+
+            return new PagedResult<TaxpayerDto>
+            {
+                Items = dtos,
+                TotalCount = totalCount,
+                PageNumber = pageNumber,
+                PageSize = pageSize
+            };
+        }
+
         public async Task<IEnumerable<TaxReceiptDto>> GetAllTaxReceiptsAsync()
         {
             var receipts = await _taxReceiptRepository.GetAllAsync();
