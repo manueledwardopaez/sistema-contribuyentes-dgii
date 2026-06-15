@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: dgii_db
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Dgii_Password123!
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: dgii_api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=db;Database=DgiiDb;User Id=sa;Password=Dgii_Password123!;TrustServerCertificate=True;
+    ports:
+      - "5000:8080"
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: dgii_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+
+volumes:
+  sqlserver_data:

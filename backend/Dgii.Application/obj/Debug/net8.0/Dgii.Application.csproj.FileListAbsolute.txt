@@ -1,0 +1,15 @@
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/bin/Debug/net8.0/Dgii.Application.deps.json
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/bin/Debug/net8.0/Dgii.Application.dll
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/bin/Debug/net8.0/Dgii.Application.pdb
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/bin/Debug/net8.0/Dgii.Domain.dll
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/bin/Debug/net8.0/Dgii.Domain.pdb
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/obj/Debug/net8.0/Dgii.Application.csproj.AssemblyReference.cache
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/obj/Debug/net8.0/Dgii.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/obj/Debug/net8.0/Dgii.Application.AssemblyInfoInputs.cache
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/obj/Debug/net8.0/Dgii.Application.AssemblyInfo.cs
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/obj/Debug/net8.0/Dgii.Application.csproj.CoreCompileInputs.cache
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/obj/Debug/net8.0/Dgii.Application.csproj.CopyComplete
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/obj/Debug/net8.0/Dgii.Application.dll
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/obj/Debug/net8.0/refint/Dgii.Application.dll
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/obj/Debug/net8.0/Dgii.Application.pdb
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/obj/Debug/net8.0/ref/Dgii.Application.dll

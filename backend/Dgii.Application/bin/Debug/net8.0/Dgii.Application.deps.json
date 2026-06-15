@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Dgii.Application/1.0.0": {
+        "dependencies": {
+          "Dgii.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Dgii.Application.dll": {}
+        }
+      },
+      "Dgii.Domain/1.0.0": {
+        "runtime": {
+          "Dgii.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dgii.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dgii.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

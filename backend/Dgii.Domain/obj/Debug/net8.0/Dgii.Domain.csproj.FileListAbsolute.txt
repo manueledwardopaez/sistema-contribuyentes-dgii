@@ -1,0 +1,11 @@
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/bin/Debug/net8.0/Dgii.Domain.deps.json
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/bin/Debug/net8.0/Dgii.Domain.dll
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/bin/Debug/net8.0/Dgii.Domain.pdb
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/Debug/net8.0/Dgii.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/Debug/net8.0/Dgii.Domain.AssemblyInfoInputs.cache
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/Debug/net8.0/Dgii.Domain.AssemblyInfo.cs
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/Debug/net8.0/Dgii.Domain.csproj.CoreCompileInputs.cache
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/Debug/net8.0/Dgii.Domain.dll
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/Debug/net8.0/refint/Dgii.Domain.dll
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/Debug/net8.0/Dgii.Domain.pdb
+/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/Debug/net8.0/ref/Dgii.Domain.dll

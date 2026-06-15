@@ -1,0 +1,207 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Tests/Dgii.Tests.csproj": {}
+  },
+  "projects": {
+    "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/Dgii.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/Dgii.Application.csproj",
+        "projectName": "Dgii.Application",
+        "projectPath": "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/Dgii.Application.csproj",
+        "packagesPath": "/home/edwardo/.nuget/packages/",
+        "outputPath": "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/edwardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/Dgii.Domain.csproj": {
+                "projectPath": "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/Dgii.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.128/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/Dgii.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/Dgii.Domain.csproj",
+        "projectName": "Dgii.Domain",
+        "projectPath": "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/Dgii.Domain.csproj",
+        "packagesPath": "/home/edwardo/.nuget/packages/",
+        "outputPath": "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/edwardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.128/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Tests/Dgii.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Tests/Dgii.Tests.csproj",
+        "projectName": "Dgii.Tests",
+        "projectPath": "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Tests/Dgii.Tests.csproj",
+        "packagesPath": "/home/edwardo/.nuget/packages/",
+        "outputPath": "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/edwardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/Dgii.Application.csproj": {
+                "projectPath": "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Application/Dgii.Application.csproj"
+              },
+              "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/Dgii.Domain.csproj": {
+                "projectPath": "/home/edwardo/Documentos/personal/prueba-dgii/backend/Dgii.Domain/Dgii.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.128/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
