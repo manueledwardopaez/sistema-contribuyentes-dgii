@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dgii.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4f8c2769a047621c878142c675552c80ec39692")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abb582bd2ef6462644b31b7147346a0b37d975a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dgii.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dgii.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
