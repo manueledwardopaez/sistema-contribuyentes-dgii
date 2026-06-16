@@ -14,7 +14,6 @@ namespace Dgii.Tests
         [Fact]
         public async Task GetTaxpayerDetailsAsync_CalculatesTotalItbisCorrectly()
         {
-            // Arrange
             var taxpayerRepoMock = new Mock<ITaxpayerRepository>();
             var taxReceiptRepoMock = new Mock<ITaxReceiptRepository>();
 
@@ -32,10 +31,8 @@ namespace Dgii.Tests
 
             var service = new TaxpayerService(taxpayerRepoMock.Object, taxReceiptRepoMock.Object);
 
-            // Act
             var result = await service.GetTaxpayerDetailsAsync(rncCedula);
 
-            // Assert
             Assert.NotNull(result);
             Assert.Equal(rncCedula, result.RncCedula);
             Assert.Equal(2, result.Receipts.Count());
@@ -45,7 +42,6 @@ namespace Dgii.Tests
         [Fact]
         public async Task GetTaxpayerDetailsAsync_ReturnsNull_WhenTaxpayerNotFound()
         {
-            // Arrange
             var taxpayerRepoMock = new Mock<ITaxpayerRepository>();
             var taxReceiptRepoMock = new Mock<ITaxReceiptRepository>();
 
@@ -53,10 +49,8 @@ namespace Dgii.Tests
 
             var service = new TaxpayerService(taxpayerRepoMock.Object, taxReceiptRepoMock.Object);
 
-            // Act
             var result = await service.GetTaxpayerDetailsAsync("00000");
 
-            // Assert
             Assert.Null(result);
         }
     }

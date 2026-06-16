@@ -1,9 +1,6 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Dgii.Application.DTOs;
 using Dgii.Application.Interfaces;
-using Dgii.Domain.Entities;
+
 
 namespace Dgii.Application.Services
 {

@@ -30,6 +30,7 @@ El sistema cuenta con las siguientes características principales:
 2. **Listado de Comprobantes Fiscales:** Visualización general de los comprobantes fiscales generados/recibidos.
 3. **Detalles de Contribuyente:** Búsqueda y visualización de la información detallada de un contribuyente en específico utilizando su RNC o Cédula.
 4. **Diseño Responsivo:** Interfaz adaptable a diferentes tamaños de pantalla.
+5. **Paginación de Resultados:** Navegación optimizada mediante páginas en el listado de contribuyentes, preservando el estado de la página al navegar entre vistas.
 ---
 
 ## 📸 Vista Previa
@@ -50,19 +51,26 @@ El proyecto está dockerizado para que sea muy fácil de levantar sin necesidad 
 
 ### Pasos para iniciar:
 
-1. Clona el repositorio o ubícate en la raíz del proyecto.
-2. Ejecuta el siguiente comando para construir las imágenes y levantar los contenedores en segundo plano:
+1. **Clonar el repositorio:** Abre tu terminal y ejecuta el siguiente comando para descargar el proyecto en tu máquina local. Luego, entra a la carpeta del proyecto:
+
+```bash
+git clone https://github.com/manueledwardopaez/sistema-contribuyentes-dgii.git
+cd sistema-contribuyentes-dgii
+```
+
+2. **Ejecutar el proyecto:** Levanta la aplicación completa ejecutando el siguiente comando para construir las imágenes y arrancar los contenedores en segundo plano:
 
 ```bash
 docker compose up -d --build
 ```
 *(Nota: Si usas Linux y tu usuario no está en el grupo `docker`, deberás usar `sudo docker compose up -d --build`)*
 
-3. Una vez los contenedores estén arriba (especialmente la base de datos SQL Server, que puede tardar unos segundos en inicializarse), podrás acceder a los servicios:
+3. **Acceder a los servicios:** Una vez los contenedores estén arriba (la base de datos SQL Server puede tardar un poco la primera vez), podrás acceder a la aplicación desde tu navegador:
 
-- **Frontend (Aplicación Web):** [http://localhost:3000](http://localhost:3000)
-- **Backend (API REST):** [http://localhost:5000/api](http://localhost:5000/api)
-- **Base de Datos:** Puerto `1433` (Credenciales por defecto en el `docker-compose.yml` - SA / Dgii_Password123!)
+- **🌐 Frontend (Aplicación Web):** [http://localhost:3000](http://localhost:3000)
+- **📖 Documentación API (Swagger):** [http://localhost:5000/swagger](http://localhost:5000/swagger)
+- **⚙️ Backend (API REST - Base):** [http://localhost:5000/api](http://localhost:5000/api)
+- **🗄️ Base de Datos:** Puerto `1433` (Credenciales: usuario `SA` / contraseña `Dgii_Password123!`)
 
 ### Para detener el proyecto:
 

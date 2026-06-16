@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { getTaxpayers } from '../api/client';
 import type { Taxpayer } from '../types';
 import { Users, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -10,7 +10,8 @@ const TaxpayerList: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   // Pagination state
-  const [page, setPage] = useState<number>(1);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const page = parseInt(searchParams.get('page') || '1', 10);
   const [totalPages, setTotalPages] = useState<number>(1);
   const pageSize = 5;
 
@@ -94,8 +95,8 @@ const TaxpayerList: React.FC = () => {
             <button
               className="btn-back"
               style={{ margin: 0, padding: '8px 16px', border: '1px solid var(--border-color)' }}
-              disabled={page === 1}
-              onClick={() => setPage(p => Math.max(1, p - 1))}
+              disabled={page <= 1}
+              onClick={() => setSearchParams({ page: Math.max(1, page - 1).toString() })}
             >
               <ChevronLeft size={18} /> Anterior
             </button>
@@ -106,7 +107,7 @@ const TaxpayerList: React.FC = () => {
               className="btn-back"
               style={{ margin: 0, padding: '8px 16px', border: '1px solid var(--border-color)', flexDirection: 'row-reverse' }}
               disabled={page >= totalPages}
-              onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+              onClick={() => setSearchParams({ page: Math.min(totalPages, page + 1).toString() })}
             >
               <ChevronRight size={18} /> Siguiente
             </button>

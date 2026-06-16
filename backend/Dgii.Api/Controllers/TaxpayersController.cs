@@ -8,7 +8,6 @@ namespace Dgii.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    // Add XML and JSON format support based on requirements
     [Produces("application/json", "application/xml")]
     public class TaxpayersController : ControllerBase
     {

@@ -40,7 +40,7 @@ namespace Dgii.Api.Middleware
             {
                 StatusCode = context.Response.StatusCode,
                 Message = "Internal Server Error from the custom middleware.",
-                Detailed = exception.Message // In production, don't expose stack traces
+                Detailed = exception.Message 
             };
 
             var jsonResponse = JsonSerializer.Serialize(response);

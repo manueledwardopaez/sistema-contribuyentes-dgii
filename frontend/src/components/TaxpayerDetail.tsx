@@ -36,7 +36,7 @@ const TaxpayerDetail: React.FC = () => {
   if (loading) return <div className="loading">Cargando detalles...</div>;
   if (error) return (
     <div className="fade-in app-container">
-      <button className="btn-back" onClick={() => navigate('/')}>
+      <button className="btn-back" onClick={() => navigate(-1)}>
         <ArrowLeft size={18} /> Volver
       </button>
       <div className="error">{error}</div>
@@ -46,7 +46,7 @@ const TaxpayerDetail: React.FC = () => {
 
   return (
     <div className="fade-in">
-      <button className="btn-back" onClick={() => navigate('/')}>
+      <button className="btn-back" onClick={() => navigate(-1)}>
         <ArrowLeft size={18} /> Volver al listado
       </button>
 

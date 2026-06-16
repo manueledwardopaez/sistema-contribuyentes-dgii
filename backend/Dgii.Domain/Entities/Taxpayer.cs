@@ -9,7 +9,6 @@ namespace Dgii.Domain.Entities
         public string Tipo { get; set; } = string.Empty;
         public string Estatus { get; set; } = string.Empty;
 
-        // Navigation property
         public ICollection<TaxReceipt> TaxReceipts { get; set; } = new List<TaxReceipt>();
     }
 }

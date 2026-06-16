@@ -8,7 +8,6 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure Serilog
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
     .Enrich.FromLogContext()
@@ -17,22 +16,19 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
-// Add services to the container.
+
 builder.Services.AddControllers(options =>
 {
     options.ReturnHttpNotAcceptable = true;
-}).AddXmlDataContractSerializerFormatters(); // Added XML support
+}).AddXmlDataContractSerializerFormatters(); 
 
-// Database Connection
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Dependency Injection
 builder.Services.AddScoped<ITaxpayerRepository, TaxpayerRepository>();
 builder.Services.AddScoped<ITaxReceiptRepository, TaxReceiptRepository>();
 builder.Services.AddScoped<ITaxpayerService, TaxpayerService>();
 
-// CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
@@ -49,7 +45,6 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -64,7 +59,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// Apply migrations at startup
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
