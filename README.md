@@ -4,12 +4,30 @@ Este proyecto es una solución integral para la gestión y consulta de **Contrib
 
 ## 🚀 Arquitectura y Tecnologías
 
-El proyecto sigue una arquitectura limpia (Clean Architecture) dividida en componentes en contenedores de Docker.
+El proyecto sigue una **Clean Architecture** (Arquitectura Limpia) en el lado del backend para garantizar un bajo acoplamiento y alta cohesión. Está dividido en contenedores de Docker.
 
 ### Backend (`/backend`)
-- **Framework:** .NET 8 (ASP.NET Core Web API)
-- **Arquitectura:** Clean Architecture (`Dgii.Api`, `Dgii.Application`, `Dgii.Domain`, `Dgii.Infrastructure`).
-- **Pruebas:** Proyecto `Dgii.Tests` incluido.
+Construido en **.NET 8 (ASP.NET Core Web API)**. El código fuente está dividido en 4 capas principales:
+
+- **1. Dgii.Domain (Dominio):** Contiene las entidades principales de negocio (`Taxpayer` y `TaxReceipt`). Esta capa no tiene dependencias hacia ninguna otra capa ni frameworks externos.
+- **2. Dgii.Application (Aplicación):** Contiene la lógica de negocio (`TaxpayerService`), los DTOs y define las interfaces de los repositorios (`ITaxpayerRepository`, etc.).
+- **3. Dgii.Infrastructure (Infraestructura):** Se encarga del acceso a datos. Implementa los repositorios y configura Entity Framework Core (`ApplicationDbContext`), gestionando también las migraciones.
+- **4. Dgii.Api (Presentación):** Capa REST. Define los controladores, la inyección de dependencias (DI), configuración de CORS, logs estructurados (Serilog) y la documentación de Swagger.
+
+**Pruebas Unitarias:** Se incluye el proyecto `Dgii.Tests` basado en xUnit y Moq.
+
+### 🔌 Endpoints de la API
+El controlador principal `TaxpayersController` expone los siguientes endpoints:
+
+- `GET /api/Taxpayers`: Devuelve un listado de contribuyentes de forma paginada (parámetros `pageNumber` y `pageSize`).
+- `GET /api/Taxpayers/receipts`: Obtiene la lista completa de todos los comprobantes fiscales almacenados.
+- `GET /api/Taxpayers/{rncCedula}`: Consulta el detalle de un contribuyente específico mediante su RNC o Cédula. Retorna sus datos, lista de comprobantes asociados y la suma total matemática del ITBIS.
+
+### 🛡️ Patrones de Diseño y Construcción
+- **Repository Pattern:** Para abstraer la lógica de acceso a la base de datos.
+- **Dependency Injection (DI):** Implementada nativamente en el ecosistema .NET.
+- **Manejo Global de Excepciones:** Uso de un `GlobalExceptionMiddleware` para estandarizar las respuestas de error y no exponer _stack traces_ en producción.
+- **Negociación de Contenido:** La API soporta formato JSON y XML nativamente mediante `[Produces]`.
 
 ### Frontend (`/frontend`)
 - **Librería/Framework:** React 19 con TypeScript.
