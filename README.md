@@ -1,6 +1,6 @@
-# Prueba Técnica - DGII (Analista Programador)
+# Sistema de Gestión de Contribuyentes
 
-Este proyecto es una solución integral para la gestión y consulta de **Contribuyentes** y **Comprobantes Fiscales**, desarrollada como parte de la prueba técnica para la Dirección General de Impuestos Internos (DGII).
+Este proyecto es una solución integral para la gestión y consulta de **Contribuyentes** y **Comprobantes Fiscales**. Esta solucion se divide en dos partes, una API REST y una interfaz de usuario (frontend), ambas divididas en componentes en contenedores de Docker. 
 
 ## 🚀 Arquitectura y Tecnologías
 
@@ -63,7 +63,6 @@ cd sistema-contribuyentes-dgii
 ```bash
 docker compose up -d --build
 ```
-*(Nota: Si usas Linux y tu usuario no está en el grupo `docker`, deberás usar `sudo docker compose up -d --build`)*
 
 3. **Acceder a los servicios:** Una vez los contenedores estén arriba (la base de datos SQL Server puede tardar un poco la primera vez), podrás acceder a la aplicación desde tu navegador:
 
@@ -78,4 +77,3 @@ docker compose up -d --build
 docker compose down
 ```
 
-*(Nota: Los datos de la base de datos se conservan en un volumen Docker nombrado `sqlserver_data`. Si deseas borrar la base de datos por completo, utiliza `docker compose down -v`).*
